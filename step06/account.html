@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+
+    <title>Create account</title>
+
+    <style>
+        body {
+
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        .home-5-bg {
+
+            background: #ffffff;
+
+            position: relative;
+
+            background-size: cover;
+
+            height: 100vh;
+
+            background-position: center center;
+
+        }
+
+
+        .section {
+
+            position: relative;
+
+        }
+
+
+        .home-5-content {
+
+            z-index: 1;
+
+            position: relative;
+
+        }
+
+
+        .bg-overlay {
+
+            background-color: rgba(0, 0, 0, 0.007);
+
+            opacity: 0.7;
+
+            position: absolute;
+
+            top: 0;
+
+            left: 0;
+
+            height: 100%;
+
+            width: 100%;
+
+        }
+
+
+        .home-center {
+
+            display: table;
+
+            width: 100%;
+
+            height: 100%;
+
+        }
+
+
+        .home-desc-center {
+
+            display: table-cell;
+
+            vertical-align: middle;
+
+        }
+
+
+        .home-5-content {
+
+            z-index: 1;
+
+            position: relative;
+
+        }
+
+
+        .text-white-70 {
+
+            color: rgba(0, 0, 0, 0.8);
+
+        }
+
+
+        .f-15 {
+
+            font-size: 15px;
+
+        }
+
+
+        .home-5-bg #particles-js {
+
+            z-index: 1 !important;
+
+            position: absolute;
+
+            width: 100%;
+
+            height: 100%;
+
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <section class="section home-5-bg" id="home">
+
+        <div id="particles-js"></div>
+
+        <div class="bg-overlay"></div>
+
+        <div class="home-center">
+
+            <div class="home-desc-center">
+
+                <div class="container">
+
+                    <div class="justify-content-center row">
+
+                        <div class="col-lg-7">
+
+                            <div class="mt-40 text-center home-5-content">
+
+                                <div class="home-icon mb-4"><i class="mdi mdi-pinwheel mdi-spin text-white h1"></i>
+                                </div>
+
+                                <!-- <h1 class="text-white font-weight-normal home-5-title mb-0">A Clean &amp; Minimal Landing Template</h1> -->
+
+                                <p class="text-white-70 mt-4 f-15 mb-0" style="font-weight: 900; font-size: 50px;">Who
+                                    are you?
+                                </p>
+
+                                <a href="createUser.html" class="btn btn-primary"
+                                    style="margin: 15px; border-radius: 10px; margin: 10px;">Applyant</a>
+
+                                <a href="createCompany.html" class="btn btn-success"
+                                    style="margin: 15px; border-radius: 10px;margin: 10px;">Employer</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script>
+
+
+        particlesJS("particles-js", {
+
+            "particles": {
+
+                "number": {
+
+                    "value": 80,
+
+                    "density": {
+
+                        "enable": true,
+
+                        "value_area": 800
+
+                    }
+
+                },
+
+                "color": {
+
+                    "value": "#de881f"
+
+                },
+
+                "shape": {
+
+                    "type": "circle",
+
+                    "stroke": {
+
+                        "width": 0,
+
+                        "color": "#000000"
+
+                    },
+
+                    "polygon": {
+
+                        "nb_sides": 5
+
+                    },
+
+                    "image": {
+
+                        "src": "img/github.svg",
+
+                        "width": 100,
+
+                        "height": 100
+
+                    }
+
+                },
+
+                "opacity": {
+
+                    "value": 0.5,
+
+                    "random": false,
+
+                    "anim": {
+
+                        "enable": false,
+
+                        "speed": 1,
+
+                        "opacity_min": 0.1,
+
+                        "sync": false
+
+                    }
+
+                },
+
+                "size": {
+
+                    "value": 20,
+
+                    "random": true,
+
+                    "anim": {
+
+                        "enable": false,
+
+                        "speed": 40,
+
+                        "size_min": 0.1,
+
+                        "sync": false
+
+                    }
+
+                },
+
+                "line_linked": {
+
+                    "enable": true,
+
+                    "distance": 150,
+
+                    "color": "#ffffff",
+
+                    "opacity": 0.22,
+
+                    "width": 1
+
+                },
+
+                "move": {
+
+                    "enable": true,
+
+                    "speed": 6,
+
+                    "direction": "none",
+
+                    "random": false,
+
+                    "straight": false,
+
+                    "out_mode": "out",
+
+                    "attract": {
+
+                        "enable": false,
+
+                        "rotateX": 600,
+
+                        "rotateY": 1200
+
+                    }
+
+                }
+
+            },
+
+            "interactivity": {
+
+                "detect_on": "canvas",
+
+                "events": {
+
+                    "onhover": {
+
+                        "enable": true,
+
+                        "mode": "repulse"
+
+                    },
+
+                    "onclick": {
+
+                        "enable": true,
+
+                        "mode": "push"
+
+                    },
+
+                    "resize": true
+
+                },
+
+                "modes": {
+
+                    "grab": {
+
+                        "distance": 400,
+
+                        "line_linked": {
+
+                            "opacity": 1
+
+                        }
+
+                    },
+
+                    "bubble": {
+
+                        "distance": 400,
+
+                        "size": 40,
+
+                        "duration": 2,
+
+                        "opacity": 8,
+
+                        "speed": 3
+
+                    },
+
+                    "repulse": {
+
+                        "distance": 200
+
+                    },
+
+                    "push": {
+
+                        "particles_nb": 4
+
+                    },
+
+                    "remove": {
+
+                        "particles_nb": 2
+
+                    }
+
+                }
+
+            },
+
+            "retina_detect": true,
+
+            "config_demo": {
+
+                "hide_card": false,
+
+                "background_color": "#b61924",
+
+                "background_image": "",
+
+                "background_position": "50% 50%",
+
+                "background_repeat": "no-repeat",
+
+                "background_size": "cover"
+
+            }
+
+        });
+
+    </script>
+</body>
+
+</html>

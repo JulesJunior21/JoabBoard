@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Create Account</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="colorlib.com">
+
+	<!-- MATERIAL DESIGN ICONIC FONT -->
+	<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+
+	<!-- STYLE CSS -->
+	<link rel="stylesheet" href="css/annonceurStyle.css">
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="image-holder">
+			<img src="images/image2.png" alt="">
+		</div>
+		<form id="company-form" action="">
+			<h1>Create Account</h1>
+			<div id="wizard">
+				<!-- SECTION 1 -->
+				<h4></h4>
+				<section>
+					<div class="form-row form-group">
+					</div>
+					<div class="form-row">
+						<label for="company_name">
+							Company Name
+						</label>
+						<input id="company_name" type="text" class="form-control" required>
+					</div>
+					<div class="form-row">
+						<label for="actitvity">
+							Activity *
+						</label>
+						<div id="activity" class="form-holder">
+							<select name="" id="" class="form-control">
+								<option value="Information" class="option">Information</option>
+								<option value="Business" class="option">Business</option>
+								<option value="Transport" class="option">Transport</option>
+							</select>
+							<i class="zmdi zmdi-caret-down"></i>
+						</div>
+					</div>
+					<div class="form-row">
+						<label for="description">
+							Description *
+						</label>
+						<textarea name="description" id="description" cols="30" rows="2"></textarea>
+					</div>
+					<div class="form-row">
+						<label for="street">
+							Street *
+						</label>
+						<input id="street" type="text" class="form-control" placeholder="Street address"
+							style="margin-bottom: 20px" required>
+						<!-- <input type="text" class="form-control" placeholder="Apartment, suite, unit etc. (optional)"> -->
+					</div>
+					<div class="form-row">
+						<label for="city">
+							Town / City *
+						</label>
+						<input id="city" type="text" class="form-control" required>
+					</div>
+				</section>
+
+				<!-- SECTION 2 -->
+				<h4></h4>
+				<section>
+					<div class="form-row">
+						<label for="country">
+							Country *
+						</label>
+						<input id="country" type="text" class="form-control" required>
+					</div>
+					<div class="form-row">
+						<label for="postalcode">
+							Postcode / Zip *
+						</label>
+						<input id="postalcode" type="text" class="form-control" required>
+					</div>
+					<div class="form-row form-group">
+						<div class="form-holder">
+							<label for="phone">
+								Phone *
+							</label>
+							<input id="phone" type="text" class="form-control" required>
+						</div>
+						<div class="form-holder">
+							<label for="email">
+								Email Address *
+							</label>
+							<input id="email" type="text" class="form-control" required>
+						</div>
+					</div>
+
+					<div class="form-row">
+                        <label for="password">
+                            Password *
+                        </label>
+                        <input id="password" type="password" class="form-control" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="valid-password">
+                            Valid Password *
+                        </label>
+                        <input id="valid-password" type="password" class="form-control" required>
+                    </div>
+
+				</section>
+
+			</div>
+		</form>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+
+	<!-- JQUERY STEP -->
+	<script src="js/jquery.steps.js"></script>
+
+	<script src="js/annonceurMain.js"></script>
+	<!-- Template created and distributed by Colorlib -->
+</body>
+
+</html>

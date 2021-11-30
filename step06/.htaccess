@@ -1,0 +1,27 @@
+RewriteEngine On # Turn on the rewriting engine
+
+RewriteRule ^/?$ home.html [NC,L]
+
+RewriteRule ^api/advertisements/?$ api/v1/advertisements.php [NC,L]
+RewriteRule ^api/advertisements/([0-9]+)/?$ api/v1/advertisements.php?id=$1 [NC,L]
+
+RewriteRule ^api/users/?$ api/v1/users.php [NC,L]
+RewriteRule ^api/users/([0-9]+)/?$ api/v1/users.php?id=$1 [NC,L]
+
+RewriteRule ^api/companies/?$ api/v1/companies.php [NC,L]
+RewriteRule ^api/companies/([0-9]+)/?$ api/v1/companies.php?id=$1 [NC,L]
+
+RewriteRule ^api/applications/?$ api/v1/applications.php [NC,L]
+RewriteRule ^api/applications/([0-9]+)/?$ api/v1/applications.php?id=$1 [NC,L]
+
+RewriteRule ^api/address/([0-9]+)/?$ api/v1/address.php?id=$1 [NC,L]
+
+RewriteRule ^api/authenticate/?$ api/v1/authenticate.php [NC,L]
+
+RewriteRule ^api/authenticate/(.*)?$ api/v1/authenticate.php?token=$1 [NC,L]
+
+
+RewriteRule ^api/authenticateCompany/?$ api/v1/authenticateCompany.php [NC,L]
+
+RewriteRule ^api/authenticateCompany/(.*)?$ api/v1/authenticateCompany.php?token=$1 [NC,L]
+

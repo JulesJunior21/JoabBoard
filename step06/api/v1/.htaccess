@@ -1,0 +1,23 @@
+RewriteEngine On # Turn on the rewriting engine
+
+RewriteRule ^advertisements/?$ advertisements.php [NC,L]
+RewriteRule ^advertisements/([0-9]+)/?$ advertisements.php?id=$1 [NC,L]
+
+RewriteRule ^users/?$ users.php [NC,L]
+RewriteRule ^users/([0-9]+)/?$ users.php?id=$1 [NC,L]
+
+RewriteRule ^companies/?$ companies.php [NC,L]
+RewriteRule ^companies/([0-9]+)/?$ companies.php?id=$1 [NC,L]
+
+RewriteRule ^applications/?$ applications.php [NC,L]
+RewriteRule ^applications/([0-9]+)/?$ applications.php?id=$1 [NC,L]
+
+RewriteRule ^authenticate/?$ authenticate.php [NC,L]
+
+RewriteRule ^authenticate/(.*)?$ authenticate.php?token=$1 [NC,L]
+
+
+RewriteRule ^authenticateCompany/?$ authenticateCompany.php [NC,L]
+
+RewriteRule ^authenticateCompany/(.*)?$ authenticateCompany.php?token=$1 [NC,L]
+
